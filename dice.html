@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Firma Adı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.antalyawebtasarim.com/destek/fav/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.antalyawebtasarim.com/destek/fav/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.antalyawebtasarim.com/destek/fav/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.antalyawebtasarim.com/destek/fav/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.antalyawebtasarim.com/destek/fav/favicon-16x16.png" />
+    <link rel="manifest" href="https://www.antalyawebtasarim.com/destek/fav/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="https://www.antalyawebtasarim.com/destek/fav/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/css/karayel.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.antalyawebtasarim.com/destek/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://www.antalyawebtasarim.com/destek/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <link rel="stylesheet" type="text/css" href="https://www.antalyawebtasarim.com/destek/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script src="https://www.antalyawebtasarim.com/destek/js/bootstrap.min.js"></script>
+    <script src="https://www.antalyawebtasarim.com/destek/bx/jquery.bxslider.min.js"></script>
+    <link href="https://www.antalyawebtasarim.com/destek/bx/jquery.bxslider.css" rel="stylesheet" />
+    <link href="https://www.antalyawebtasarim.com/destek/css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/owl/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/owl/assets/owl.theme.default.css">
+
+    <!--Aşağıdaki CSS ve Sil Klasörü Müşteriye Giderken Silinecek İçine Stil Yazmayın!-->
+    <link rel="stylesheet" href="https://www.antalyawebtasarim.com/destek/icsayfalar/css/home.css">
+</head>
+<body class="pt30 pb30">
+    <style>
+        html {
+            text-align: center;
+        }
+
+        .roll {
+            padding: 1em;
+        }
+
+        .die {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-family: Menlo, monospace;
+            font-size: 4em;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+    <div>
+        <button class="roll">D4</button>
+        <button class="roll">D20</button>
+        <button class="roll">D100</button>
+        <div class="die">0</div>
+    </div>
+
+    <div class="container text-left">
+        <div class="row">
+            <div class="col-xs-12">
+                <textarea id="inputTextToSave" style="width: 100%;" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="row mt15">
+                    <div class="col-xs-5">
+                        Akışı Şu İsimle Kaydet:
+                    </div>
+                    <div class="col-xs-7">
+                        <input id="inputFileNameToSaveAs">
+                    </div>
+                </div>
+                <div class="row mt15">
+                    <div class="col-xs-5">
+                        Yüklenecek Akış Dosyasını Seç:
+                    </div>
+                    <div class="col-xs-7">
+                        <input type="file" id="fileToLoad">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="row mt15">
+                    <div class="col-xs-12">
+                        <button onclick="saveTextAsFile()">Akışı Kaydet</button>
+                    </div>
+                </div>
+                <div class="row mt15">
+                    <div class="col-xs-12">
+                        <button onclick="loadFileAsText()">Akış Yükle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.antalyawebtasarim.com/destek/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="https://www.antalyawebtasarim.com/destek/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="https://www.antalyawebtasarim.com/destek/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="https://www.antalyawebtasarim.com/destek/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script src="https://www.antalyawebtasarim.com/destek/owl/owl.carousel.min.js"></script>
+    <script src="https://www.antalyawebtasarim.com/destek/owl/owl.carousel2.thumbs.min.js"></script>
+    <script src="https://www.antalyawebtasarim.com/destek/js/wow.min.js"></script>
+    <script src="https://www.antalyawebtasarim.com/destek/js/karayel.js"></script>
+    <script>
+        var d = new Date();
+        var time = d.getDay() + "." + d.getMonth() + "." + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
+        var dieNum;
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function rollDie(num) {
+            num = num.substring(1, num.length);
+            $(".die").html(getRandomInt(1, num));
+            var myval = $(".die").html();
+            $('#inputTextToSave').append(time + " - D" + num + " ile " + myval + " attınız. \r");
+        }
+
+        $(".roll").on("click", function () {
+            dieNum = $(this).html();
+            rollDie(dieNum);
+        });
+
+        function saveTextAsFile() {
+            var textToSave = document.getElementById("inputTextToSave").value;
+            var textToSaveAsBlob = new Blob([textToSave], { type: "text/plain" });
+            var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+            var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+
+            var downloadLink = document.createElement("a");
+            downloadLink.download = fileNameToSaveAs;
+            downloadLink.innerHTML = "Download File";
+            downloadLink.href = textToSaveAsURL;
+            downloadLink.onclick = destroyClickedElement;
+            downloadLink.style.display = "none";
+            document.body.appendChild(downloadLink);
+
+            downloadLink.click();
+        }
+
+        function destroyClickedElement(event) {
+            document.body.removeChild(event.target);
+        }
+
+        function loadFileAsText() {
+            var fileToLoad = document.getElementById("fileToLoad").files[0];
+
+            var fileReader = new FileReader();
+            fileReader.onload = function (fileLoadedEvent) {
+                var textFromFileLoaded = fileLoadedEvent.target.result;
+                document.getElementById("inputTextToSave").value = textFromFileLoaded;
+            };
+            fileReader.readAsText(fileToLoad, "UTF-8");
+        }
+    </script>
+</body>
+</html>
